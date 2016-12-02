@@ -5,7 +5,29 @@ package NumberIntoWordsConverter;
  */
 public class NumberIntoWordsConverter {
 
-    private String[] numberInWords = {"zero", "one", "two"};
+    private String[] numberInWords = {
+            "zero",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen",
+            "twenty"
+    };
 
     public String convert(int number){
         return numberInWords[number];
