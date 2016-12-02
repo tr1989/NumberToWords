@@ -5,7 +5,9 @@ package NumberIntoWordsConverter;
  */
 public class NumberIntoWordsConverter {
 
+    private String[] numberInWords = {"zero", "one", "two"};
+
     public String convert(int number){
-        return (number==1) ? "one" : "two";
+        return numberInWords[number];
     }
 }
