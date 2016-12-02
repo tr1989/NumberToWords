@@ -18,4 +18,10 @@ public class NumberIntoWordsConverterShould {
         NumberIntoWordsConverter n2wConverter = new NumberIntoWordsConverter();
         Assert.assertEquals("two", n2wConverter.convert(2));
     }
+
+    @Test
+    public void convert_19_into_words_as_nineteen() {
+        NumberIntoWordsConverter n2wConverter = new NumberIntoWordsConverter();
+        Assert.assertEquals("nineteen", n2wConverter.convert(19));
+    }
 }
