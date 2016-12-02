@@ -30,4 +30,11 @@ public class NumberIntoWordsConverterShould {
         NumberIntoWordsConverter n2wConverter = new NumberIntoWordsConverter();
         Assert.assertEquals("twenty one", n2wConverter.convert(21));
     }
+
+    @Test
+    public void convert_25_into_words_as_twenty_five() {
+        NumberIntoWordsConverter n2wConverter = new NumberIntoWordsConverter();
+        Assert.assertEquals("twenty five", n2wConverter.convert(25));
+    }
+
 }
