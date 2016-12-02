@@ -33,7 +33,9 @@ public class NumberIntoWordsConverter {
         if(number <=20){
             return numberInWords[number];
         } else{
-            return "twenty one";
+            String current = "twenty";
+            number /= number % 10;
+            return current+ " " + numberInWords[number];
         }
     }
 }
