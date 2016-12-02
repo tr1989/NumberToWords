@@ -37,4 +37,10 @@ public class NumberIntoWordsConverterShould {
         Assert.assertEquals("twenty five", n2wConverter.convert(25));
     }
 
+    @Test
+    public void convert_99_into_words_as_ninty_nine() {
+        NumberIntoWordsConverter n2wConverter = new NumberIntoWordsConverter();
+        Assert.assertEquals("ninty nine", n2wConverter.convert(99));
+    }
+
 }
