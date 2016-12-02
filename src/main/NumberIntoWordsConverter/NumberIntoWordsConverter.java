@@ -5,37 +5,9 @@ package NumberIntoWordsConverter;
  */
 public class NumberIntoWordsConverter {
 
-    private String[] numberInWords = {
-            "zero",
-            "one",
-            "two",
-            "three",
-            "four",
-            "five",
-            "six",
-            "seven",
-            "eight",
-            "nine",
-            "ten",
-            "eleven",
-            "twelve",
-            "thirteen",
-            "fourteen",
-            "fifteen",
-            "sixteen",
-            "seventeen",
-            "eighteen",
-            "nineteen",
-            "twenty"
-    };
-
     public String convert(int number){
-        if(number <=20){
-            return numberInWords[number];
-        } else{
-            String current = "twenty";
-            number /= number % 10;
-            return current+ " " + numberInWords[number];
-        }
+        WordsConverter wordsConverter = new WordsConverter();
+        return wordsConverter.convertWords(number);
     }
+
 }
