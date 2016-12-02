@@ -30,6 +30,10 @@ public class NumberIntoWordsConverter {
     };
 
     public String convert(int number){
-        return numberInWords[number];
+        if(number <=20){
+            return numberInWords[number];
+        } else{
+            return "twenty one";
+        }
     }
 }
