@@ -6,6 +6,6 @@ package NumberIntoWordsConverter;
 public class NumberIntoWordsConverter {
 
     public String convert(int number){
-        return "one";
+        return (number==1) ? "one" : "two";
     }
 }
